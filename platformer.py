@@ -17,7 +17,7 @@ class Game:
 
     def load_data(self):
 
-        with open(hs_file, 'w') as f:
+        with open(hs_file, 'r') as f:
             try:
                 self.highscore = int(f.read())
             except:
